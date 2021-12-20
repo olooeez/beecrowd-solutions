@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int x, y, sum;
+	int x, y, sum;
 
-    scanf("%d", &x);
-    scanf("%d", &y);
+	scanf("%d", &x);
+	scanf("%d", &y);
 
-    sum = x + y;
+	sum = x + y;
 
-    printf("SOMA = %d\n", sum);
-    return 0;
+	printf("SOMA = %d\n", sum);
+	return 0;
 }

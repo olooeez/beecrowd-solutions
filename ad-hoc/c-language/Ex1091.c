@@ -1,38 +1,38 @@
 #include <stdio.h>
 
-#define northeaster "NE"
-#define northwester "NO"
-#define southwester "SO"
-#define southeaster "SE"
+#define NORTHEASTER "NE"
+#define NORTHWESTER "NO"
+#define SOUTHWESTER "SO"
+#define SOUTHEASTER "SE"
 
 int main() {
-    int cases, i;
+	int cases, i;
 
-    while (1) {
-        int x, y, n, m;
+	while (1) {
+		int x, y, n, m;
 
-        scanf("%hu", &cases);
-        if (cases == 0) break;
+		scanf("%hu", &cases);
+		if (cases == 0) break;
 
-        scanf("%d %d", &n, &m);
+		scanf("%d %d", &n, &m);
 
-        for (i = 0; i < cases; i++) {
-            scanf("%d %d", &x, &y);
+		for (i = 0; i < cases; i++) {
+			scanf("%d %d", &x, &y);
 
-            if (x == n || y == m) {
-                printf("divisa\n");
-            } else if (x > n && y > m) {
-                printf("%s\n", northeaster);
-            } else if (x < n && y > m) {
-                printf("%s\n", northwester);
-            } else if (x > n && y < m) {
-                printf("%s\n", southeaster);
-            } else if (x < n && y < m) {
-                printf("%s\n", southwester);
-            }
-        }
+			if (x == n || y == m) {
+				printf("divisa\n");
+			} else if (x > n && y > m) {
+				printf("%s\n", NORTHEASTER);
+			} else if (x < n && y > m) {
+				printf("%s\n", NORTHWESTER);
+			} else if (x > n && y < m) {
+				printf("%s\n", SOUTHEASTER);
+			} else if (x < n && y < m) {
+				printf("%s\n", SOUTHWESTER);
+			}
+		}
 
-    }
+	}
 
-    return 0;
+	return 0;
 }

@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int x, y;
+	int x, y;
 
-    scanf("%d", &x);
-    scanf("%d", &y);
+	scanf("%d", &x);
+	scanf("%d", &y);
 
-    printf("X = %d\n", x + y);
-    return 0;
+	printf("X = %d\n", x + y);
+	return 0;
 }

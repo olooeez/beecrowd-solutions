@@ -7,28 +7,29 @@
 #define REFRIGERANTE 1.50
 
 int main() {
-    int x, y;
-    double total;
+	int x, y;
+	double total;
 
-    scanf("%d %d", &x, &y);
+	scanf("%d %d", &x, &y);
 
-    switch (x) {
-        case 1:
-            total = y * CACHORRO_QUENTE;
-            break;
-        case 2:
-            total = y * X_SALADA;
-            break;
-        case 3:
-            total = y * X_BACON;
-            break;
-        case 4:
-            total = y * TORRADA_SIMPLES;
-            break;
-        case 5:
-            total = y * REFRIGERANTE;
-    }
+	switch (x) {
+	case 1:
+		total = y * CACHORRO_QUENTE;
+		break;
+	case 2:
+		total = y * X_SALADA;
+		break;
+	case 3:
+		total = y * X_BACON;
+		break;
+	case 4:
+		total = y * TORRADA_SIMPLES;
+		break;
+	case 5:
+		total = y * REFRIGERANTE;
+		break;
+	}
 
-    printf("Total: R$ %.2lf\n", total);
-    return 0;
+	printf("Total: R$ %.2lf\n", total);
+	return 0;
 }

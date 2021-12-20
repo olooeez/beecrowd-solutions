@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int cases, i, days;
-    float food;
+	int cases, i, days;
+	float food;
 
-    scanf("%d", &cases);
+	scanf("%d", &cases);
 
-    for (i = 0; i < cases; i++) {
-        scanf("%f", &food);
+	for (i = 0; i < cases; i++) {
+		scanf("%f", &food);
 
-        days = 0;
-        while (food > 1) {
-            food /= 2;
-            days++;
-        }
+		days = 0;
+		while (food > 1) {
+			food /= 2;
+			days++;
+		}
 
-        printf("%d dias\n", days);
-    }
+		printf("%d dias\n", days);
+	}
 
-    return 0;
+	return 0;
 }

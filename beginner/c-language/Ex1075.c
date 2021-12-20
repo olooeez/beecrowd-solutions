@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int number, i;
-    
-    scanf("%d", &number);
+	int number, i;
 
-    for (i = 1; i < 10000; i++) {
-        if (i % number == 2) {
-            printf("%d\n", i);
-        }
-    }
+	scanf("%d", &number);
 
-    return 0;
+	for (i = 1; i < 10000; i++) {
+		if (i % number == 2) {
+			printf("%d\n", i);
+		}
+	}
+
+	return 0;
 }
